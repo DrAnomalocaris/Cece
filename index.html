@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cece</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+<div class="black-overlay"></div>
+<div id="black-curtain">
+    <span id="splashCredits" >
+        <img src="spash.png" id="splash">
+        Made my Dr.Anomalocaris, original code made by heyseth shared with an MIT license.
+        <br>
+        💖 Please be kind to Cece and yourself 💖
+        <br>
+        🎀
+    </span>
+</div>
+<div id='centralClock'>
+    <div id='clock'></div>
+    <div id='date'></div>
+    <div id='onThisDate'>
+        Cece wears a bright red bow,
+        Eating colors, watch her go!
+        In the code, she dances free,
+        Happy, tiny, full of glee.</div>
+</div>
+<canvas id='canvas'></canvas>
+<div id='nodeHolder'></div>
+<div id='info'>
+    Noms: <span id='nomValue'></span>
+    <br>
+    Age:<span id="ageValue">0</span>
+</div>
+
+<div id="buttons">
+    Brain- <label id="toggleConnectome" class="switch">
+        <input id="connectomeCheckbox" type="checkbox" **checked** onclick="toggleConnectome()">
+        <span class="slider round"></span>
+    </label>
+    <br>
+    Sound- <label id="toggleSound" class="switch">
+        <input id="soundCheckbox" type="checkbox" checked onclick="toggleSound()">
+        <span class="slider round"></span>
+    </label>
+    <br>
+    Nom--- <label id="toggleNom" class="switch">
+    <input id="nomCheckbox" type="checkbox" checked onclick="toggleNom()">
+    <span class="slider round"></span>
+    </label>
+    <br>
+    Clock- <label id="toggleClock" class="switch">
+        <input id="clockCheckbox" type="checkbox" checked onclick="toggleClock()">
+        <span class="slider round"></span>
+    </label>
+    <br>
+    Quote- <label id="toggleQuote" class="switch">
+    <input id="quoteCheckbox" type="checkbox" checked onclick="toggleQuote()">
+    <span class="slider round"></span>
+    </label>
+    <br>
+    Trail- <label id="toggleTrail" class="switch">
+    <input id="trailCheckbox" type="checkbox" **checked** onclick="toggleTrail()">
+    <span class="slider round"></span>
+    </label>
+    <br>
+    Info-- <label id="toggleInfo" class="switch">
+    <input id="infoCheckbox" type="checkbox" checked onclick="toggleInfo()">
+    <span class="slider round"></span>
+    </label>
+    <br>
+    Clean- <label id="toggleClean" class="switch">
+        <input id="cleanCheckbox" type="checkbox" checked onclick="toggleClean()">
+        <span class="slider round"></span>
+    </label>
+
+</div>
+
+<script type="text/javascript" src="connectome.js"></script>
+<script type="text/javascript" src="onThisDay.js"></script>
+<script type="text/javascript" src="quotes.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>
